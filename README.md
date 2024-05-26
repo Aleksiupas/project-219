@@ -15,3 +15,6 @@ To install this project run
   make install-laravel
 ```
 
+Complete `server/.env` `DB_PASSWORD`
+
+Visit http://localhost:8080/graphiql
