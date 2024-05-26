@@ -25,8 +25,8 @@ Run database migrations to create the users table:
 Seed the database with some fake users:
 
 ```bash
-  docker compose exec php-cli bash -c "php artisan tinker
-\App\Models\User::factory(10)->create()"
+  docker compose exec php-fpm bash -c "php artisan tinker"
+        \App\Models\User::factory(10)->create()
 ```
 
 Visit http://localhost:8080/graphiql
