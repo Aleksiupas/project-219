@@ -30,3 +30,6 @@ Seed the database with some fake users:
 ```
 
 Visit http://localhost:8080/graphiql
+
+Next, try adding new types based on the examples here:
+https://lighthouse-php.com/tutorial/#installation
