@@ -1,7 +1,7 @@
 cli:
 	docker compose exec php-cli bash
 
-install-laravel:
+install:
 	docker compose exec php-cli bash -c "composer create-project laravel/laravel install-app"
 	docker compose exec php-cli bash -c "mv install-app/* ./ && mv install-app/.* ./ && rm -rf install-app"
 	docker compose exec php-cli bash -c "composer require nuwave/lighthouse"

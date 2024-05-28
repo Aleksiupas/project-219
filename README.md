@@ -11,7 +11,7 @@ docker compose up --build -d
 ```
 
 ```bash
-make install-laravel
+make install
 ```
 
 Complete `server/.env` `DB_PASSWORD=secret`
