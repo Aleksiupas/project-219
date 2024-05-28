@@ -60,7 +60,7 @@ services:
       - "MYSQL_DATABASE=laravel"
     ports:
     - "33061:3306"
-  
+
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: vu-phpmyadmin
@@ -81,27 +81,6 @@ services:
   #   - ./server:/var/www
   #   working_dir: /var/www
   #   tty: true
-
-  admin:
-    container_name: vu-admin
-    build:
-      context: ./admin
-      dockerfile: Dockerfile
-    ports:
-        - "3002:3000"
-    volumes:
-      - ./admin/app:/vu-admin/app
-
-  client:
-    container_name: vu-client
-    build:
-      context: ./client
-      dockerfile: Dockerfile
-    ports:
-        - "3003:3000"
-    volumes:
-      - ./client/app:/vu-client/app
-      - ./client/public:/vu-client/public
 
 volumes:
   database:
